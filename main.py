@@ -1,4 +1,10 @@
-import datastructures.dslinkenlist as linkedlist
+from collections import deque
 
-linkedlist = linkedlist.DSLinkedList(1, 2, 30)
-print(linkedlist)
+d = deque(["a", "b", "c"])
+print(d)
+
+d.append("f")
+print(d)
+
+d.pop()
+print(d)
