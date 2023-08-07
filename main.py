@@ -1,10 +1,7 @@
-from collections import deque
+from hash_distribution import plot, distribute
+from string import printable
+from hash_function import hash_func
 
-d = deque(["a", "b", "c"])
-print(d)
 
-d.append("f")
-print(d)
 
-d.pop()
-print(d)
+plot(distribute(printable, 20, hash_function=hash_func))
