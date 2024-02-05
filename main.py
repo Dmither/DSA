@@ -7,40 +7,29 @@ from algorithms.InsertionSort import insertionSort
 from algorithms.MergeSort import mergeSort
 from algorithms.QuickSort import quickSort
 
-# arr = [2, 5, 1, 8, 3]
+R1 = 3
+R2 = 8
+U = 18
+tm = 3.7
 
-arr1 = []
-arr2 = []
-arr3 = []
-arr4 = []
-arr5 = []
-for i in range(9):
-  arr1.append(math.ceil(random() * 10))
-  arr2.append(math.ceil(random() * 10))
-  arr3.append(math.ceil(random() * 10))
-  arr4.append(math.ceil(random() * 10))
-  arr5.append(math.ceil(random() * 10))
+t = tm * 60
+R = R1 + R2
 
-print(arr1)
-selectionSort(arr1)
-print(arr1)
-print()
+I = U / R
+Isq = I**2
+Q1 = Isq * R1 * t
+print(round(Q1 / 1000, 1))
+Q2 = Isq * R2 * t
+print(round(Q2 / 1000, 1))
 
-print(arr2)
-bubbleSort(arr2)
-print(arr2)
-print()
+U1 = U / R * R1
+U2 = U / R * R2
+Q1 = U1 * I * t
+print(round(Q1 / 1000, 1))
+Q2 = U2 * I * t
+print(round(Q2 / 1000, 1))
 
-print(arr3)
-insertionSort(arr3)
-print(arr3)
-print()
-
-print(arr4)
-mergeSort(arr4)
-print(arr4)
-print()
-
-print(arr5)
-quickSort(arr5, 0, len(arr5) - 1)
-print(arr5)
+Q1 = (U1 ** 2) / R1 * t
+print(round(Q1 / 1000, 1))
+Q2 = (U2 ** 2) / R2 * t
+print(round(Q2 / 1000, 1))
