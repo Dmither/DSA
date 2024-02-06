@@ -1,5 +1,3 @@
-# for undirected unweighted graph
-
 class Graph:
     def __init__(self, size, directed=False, weighted=False, looped=False):
         self.adjMatrix = []
@@ -51,7 +49,7 @@ class Graph:
             print()
         print()
 
-graph = Graph(3, True, True, True)
+graph = Graph(3, False, False, True)
 graph.print_matrix()
 graph.add_edge(0, 1, 2)
 graph.print_matrix()
