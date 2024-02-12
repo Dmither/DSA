@@ -49,24 +49,7 @@ class Graph:
             print()
         print()
 
-graph = Graph(3, False, False, True)
-graph.print_matrix()
-graph.add_edge(0, 1, 2)
-graph.print_matrix()
-graph.add_edge(0, 2, 3)
-graph.print_matrix()
-graph.add_edge(1, 2, 4)
-graph.print_matrix()
-graph.add_edge(0, 0, 1)
-graph.print_matrix()
+graph = Graph(4, True, True, False)
 
 
-# Список суміжності:
-# graph = {
-#     "A": {"B", "C"},
-#     "B": {"A", "D", "E"},
-#     "C": {"A", "F"},
-#     "D": {"B"},
-#     "E": {"B", "F"},
-#     "F": {"C", "E"},
-# }
+graph.print_matrix()
